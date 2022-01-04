@@ -1,0 +1,16 @@
+1) Open VSCode --> Terminal --> Gitbash
+2) Type $ ssh-keygen
+	Output Example: Your public key has been saved in /d/Users/shubhamc/.ssh/id_rsa.pub 
+3) cat /d/Users/shubhamc/.ssh/id_rsa.pub
+	Output Example : ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC2mNV8KFBlZBfepS9tGPX41gABjqk4WXd5fU8xElMwhveObTRw/SFmn5BUsJW0cXG6wS3Ml3GSwfC0MolSgCHZye6c9uzvGbAPho4LHvUPxep1tNxw8WjDQCGnk71nHL0F1P0JKYHG/YW16DmS36VRhoo5ti88UDZ6U71QZS4r06BzLz89t9OnSF+3+/H1d4HvN0IXl6xVC3XevardK0kTX8GN197AueJ7UDOQ8LhCjj7gb7SaGMpfaVDGuvSNrE/ZcFGAafzrcB2IHQ2EzQiCZCaSFdbz44g5DwUcR+KknkS/pZxNIxRFF2elSFJUIKP9//wpbpkAhcaFBZIoVCdmQSNukPjPsoakq9mWNqmpwLpdTT2F6JbGa/d4iXzFZhUSQWdC9/8XeNqRW8XRuklpphVvDVjtXo9Hx/VHnd4eAr7X4+411lOsu2UTsA+IuCj8N1+t2wcmGkotaP+mrIx+9HOl3LiZxpyYNF9ippCqwexWe2yrrO85CPCx6Hhawok= shubhamc@VDIAMZN-AACPOT0
+4) Copy the above output let the output be OUT
+5) Open Bitbucket --> Profile --> Personal Settings
+6) In Security --> SSH keys --> Add Key 
+7) Label : Any Name ; Key : OUT --> Add Key
+8) Connection has been established
+9) Go to Repositories --> Choose Any folder --> Click on Clone --> Copy the link, let the link be LINK
+9) mkdir folder_name
+10) cd folder_name
+11) $ git clone LINK (Link eg :git@bitbucket.org:UCAS/topaz.iac.choose-and-send.git) --> yes 
+12) $ git branch or $git status (eg : Master)
+13) $ git switch dev (To switch from master branch to dev branch)

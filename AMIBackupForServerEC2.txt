@@ -1,0 +1,33 @@
+AMI Backup
+
+1) Search for EC2 and select on Lifecycle manager which id under Elastic Block Storage
+
+2) Click on Create lifecycle policy
+
+3) Policy type --> EBS-backed AMI policy --> Next Step
+
+4) Target resource tags --> Add the tag of the instance so that it can recognise --> Click on Add. 
+
+5) Policy description : Give any suitable name. (Here it is "Backup of Servers")
+
+6) IAM role --> Choose another role and select "AWSDataLifecycleManagerDefaultRoleForAMIManagement"
+
+7) Policy Status --> Enabled
+
+8) Instance reboot --> No --> Click on next
+
+9) Schedule name --> Give any name
+
+10) Frequency --> Weekly and select the days you want your backup happen on. (Here it is Wed, Mon and Friday)
+
+11) Starting at : 23:00 UTC
+
+12) Retention type --> Count
+
+13) Expire --> 5 
+
+14) Click on Review Policy --> Click on Create Policy
+
+
+
+
